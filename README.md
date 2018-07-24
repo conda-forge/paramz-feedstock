@@ -14,14 +14,15 @@ Summary: Parameterization Framework for parameterized model creation and handlin
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/paramz-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/paramz-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/paramz-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/paramz-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/paramz-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/paramz-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/paramz-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/paramz-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/paramz/badges/version.svg)](https://anaconda.org/conda-forge/paramz)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/paramz/badges/downloads.svg)](https://anaconda.org/conda-forge/paramz)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-paramz-green.svg)](https://anaconda.org/conda-forge/paramz) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/paramz.svg)](https://anaconda.org/conda-forge/paramz) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/paramz.svg)](https://anaconda.org/conda-forge/paramz) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/paramz.svg)](https://anaconda.org/conda-forge/paramz) |
 
 Installing paramz
 =================
