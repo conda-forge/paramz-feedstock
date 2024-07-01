@@ -1,5 +1,5 @@
 {% set name = "paramz" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 {% set sha256 = "0917211c0f083f344e7f1bc997e0d713dbc147b6380bc19f606119394f820b9a" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/sods/paramz/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - dirmeier
+    - jan-janssen
