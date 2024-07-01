@@ -1,6 +1,6 @@
 {% set name = "paramz" %}
 {% set version = "0.9.6" %}
-{% set sha256 = "0917211c0f083f344e7f1bc997e0d713dbc147b6380bc19f606119394f820b9a" %}
+{% set sha256 = "dc2f954ceceb9c67703e613e1c3dff63ecffcfb036bfc770a885ecce4d5b3083" %}
 
 
 package:
