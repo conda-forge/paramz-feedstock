@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
+    - python >=3.6
     - numpy >=1.7
     - scipy
     - six
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/sods/paramz
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'Parameterization Framework for parameterized model creation and handling.'
   doc_url: https://pythonhosted.org/paramz
