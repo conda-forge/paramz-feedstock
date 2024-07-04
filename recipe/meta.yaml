@@ -1,6 +1,6 @@
 {% set name = "paramz" %}
-{% set version = "0.9.5" %}
-{% set sha256 = "0917211c0f083f344e7f1bc997e0d713dbc147b6380bc19f606119394f820b9a" %}
+{% set version = "0.9.6" %}
+{% set sha256 = "dc2f954ceceb9c67703e613e1c3dff63ecffcfb036bfc770a885ecce4d5b3083" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/sods/paramz/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -20,21 +20,25 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
-    - numpy >=1.7
+    - python >=3.6
+    - numpy >=1.7,<2
     - scipy
     - six
     - decorator >=4.0.10
 test:
   imports:
     - paramz
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/sods/paramz
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'Parameterization Framework for parameterized model creation and handling.'
   doc_url: https://pythonhosted.org/paramz
@@ -43,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - dirmeier
+    - jan-janssen
