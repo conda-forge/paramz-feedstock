@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paramz-feedstoc
 
 Home: https://github.com/sods/paramz
 
-Package license: BSD 3-clause
+Package license: BSD-3-Clause
 
 Summary: Parameterization Framework for parameterized model creation and handling.
 
