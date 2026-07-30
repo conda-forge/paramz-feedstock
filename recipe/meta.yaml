@@ -1,6 +1,7 @@
 {% set name = "paramz" %}
-{% set version = "0.9.6" %}
-{% set sha256 = "dc2f954ceceb9c67703e613e1c3dff63ecffcfb036bfc770a885ecce4d5b3083" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "e8db01b771949169d71e425228dca1610f71ed86a7f675254f32414299c2c088" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -14,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -24,7 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.7,<2
+    - numpy >=2
     - scipy
     - six
     - decorator >=4.0.10
