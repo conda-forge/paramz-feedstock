@@ -1,6 +1,7 @@
 {% set name = "paramz" %}
 {% set version = "0.10.0" %}
 {% set sha256 = "e8db01b771949169d71e425228dca1610f71ed86a7f675254f32414299c2c088" %}
+{% set python_min = "3.11" %}
 
 
 package:
