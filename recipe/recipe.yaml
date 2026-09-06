@@ -4,7 +4,6 @@ context:
   name: paramz
   version: "0.10.0"
   sha256: e8db01b771949169d71e425228dca1610f71ed86a7f675254f32414299c2c088
-  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -13,12 +12,11 @@ package:
 source:
   url: https://github.com/sods/paramz/archive/v${{ version }}.tar.gz
   sha256: ${{ sha256 }}
-  file_name: ${{ name }}-${{ version }}.tar.gz
 
 build:
   number: 1
   noarch: python
-  script: ${{ PYTHON }} -m pip install . --no-deps -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -37,7 +35,9 @@ tests:
       imports:
         - paramz
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   license: BSD-3-Clause
